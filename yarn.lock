@@ -2313,6 +2313,11 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.8"
 
+mande@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/mande/-/mande-2.0.3.tgz#48288ea2089a21af30891590d96cdfba5c0352ed"
+  integrity sha512-rWIgfcpx6nlUHDOQbHu9dSYFxib3hV85lo7KnoA7T+uBRLiSM6dy00M/+NABNkDCVgJNcm8Ib4nobLfERhrvxA==
+
 map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
