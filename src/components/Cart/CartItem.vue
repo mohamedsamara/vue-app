@@ -42,6 +42,7 @@ const removeFromCart = (id: number) => {
 }
 
 .cart-item img {
+  max-width: 100px;
   min-width: 100px;
   height: 100px;
   object-fit: contain;
