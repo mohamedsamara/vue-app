@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router';
       class="logo"
       src="@/assets/logo.svg"
       width="95"
-      height="95"
+      height="60"
     />
 
     <div class="wrapper">
@@ -26,6 +26,7 @@ import { RouterLink } from 'vue-router';
 header {
   line-height: 1.5;
   max-height: 100vh;
+  padding: 2rem 0.5rem;
 }
 
 .logo {
@@ -36,13 +37,13 @@ header {
 nav {
   width: 100%;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1rem;
   padding: 1rem 0;
 }
 
 nav a.router-link-exact-active {
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--vt-c-primary);
 }
 
 nav a.router-link-exact-active:hover {

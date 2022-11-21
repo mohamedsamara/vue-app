@@ -13,6 +13,7 @@ export const useProductsStore = defineStore('products', () => {
   async function fetchProducts() {
     try {
       products.value = await api.get('');
+      return products;
     } catch (error) {
       return error;
     }

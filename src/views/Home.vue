@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router';
 </script>
 <template>
   <main>
-    <div class="home">
+    <div class="home container">
       <RouterLink to="/shop">View Products</RouterLink>
     </div>
   </main>
