@@ -12,6 +12,10 @@ a {
   transition: 0.4s;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .container {
   padding-left: 12px;
   padding-right: 12px;

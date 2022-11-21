@@ -2,17 +2,9 @@
 import ProductItem from './ProductItem.vue';
 import type { IProduct } from '@/lib/types';
 
-// export default {
-//   props: {
-//     products: IProduct<[]>,
-//   },
-// };
-
 defineProps<{
   products: IProduct[];
 }>();
-
-// defineProps(['products']);
 </script>
 
 <template>

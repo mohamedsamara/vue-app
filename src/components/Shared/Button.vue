@@ -11,6 +11,7 @@ interface Props {
     | 'warning'
     | 'danger';
   fullWidth?: boolean;
+  rounded?: string;
 }
 
 const emit = defineEmits(['click']);
@@ -20,6 +21,7 @@ withDefaults(defineProps<Props>(), {
   type: 'button',
   kind: 'normal',
   fullWidth: true,
+  rounded: '5px',
 });
 
 async function onClick(event: MouseEvent) {
@@ -31,6 +33,7 @@ async function onClick(event: MouseEvent) {
   <button
     :type="type"
     :class="[`btn`, { 'full-width': fullWidth }, kind]"
+    :style="{ borderRadius: rounded }"
     @click="onClick"
   >
     <slot />
@@ -41,7 +44,7 @@ async function onClick(event: MouseEvent) {
 .btn {
   background-color: var(--color-background-soft);
   border: 0;
-  padding: 10px 12px;
+  padding: 12px 16px;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;

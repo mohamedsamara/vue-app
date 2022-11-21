@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import type { IProduct } from '@/lib/types';
 import { Button } from '@/components/Shared';
+import { useCartStore } from '@/stores/cart';
+
+const cartStore = useCartStore();
 
 defineProps<{
   product: IProduct;
 }>();
 
-const addToCart = (id: number) => {
-  console.log(id);
+const addToCart = (product: IProduct) => {
+  cartStore.addToCart(product);
 };
 </script>
 
@@ -22,7 +25,7 @@ const addToCart = (id: number) => {
     </p>
     <div class="price">${{ product.price }}</div>
     <div class="add-to-cart">
-      <Button kind="primary" @click="addToCart(product.id)">Add To Cart</Button>
+      <Button kind="primary" @click="addToCart(product)">Add To Cart</Button>
     </div>
   </div>
 </template>
