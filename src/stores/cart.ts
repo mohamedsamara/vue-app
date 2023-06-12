@@ -5,7 +5,9 @@ import type { IProduct, ICartItem } from '@/lib/types';
 import { CART_STORAGE } from '@/lib/constants';
 
 export const useCartStore = defineStore('cart', () => {
-  const cartStorage = JSON.parse(localStorage.getItem(CART_STORAGE) as string);
+  const cartStorage =
+    JSON.parse(localStorage.getItem(CART_STORAGE) as string) || [];
+
   const cart = ref<ICartItem[]>(cartStorage);
 
   const addToCart = (product: IProduct) => {
