@@ -19,4 +19,4 @@ This is a Vue project that displays a collection of products to users, allowing 
 
 ## Documentation
 
-See [Docs](./Vue.md)
+See [Docs](./vue.md)
